@@ -1,0 +1,17 @@
+{
+  "name": "Marthe – Mathe fürs Abitur",
+  "short_name": "Marthe",
+  "description": "Mathe-Theorie fürs Abitur lernen – kurz, täglich, offline.",
+  "lang": "de",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#36648B",
+  "theme_color": "#36648B",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

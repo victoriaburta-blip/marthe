@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 225" role="img" aria-label="Spat, aufgespannt von den Vektoren a, b und c">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+    <marker id="tiny" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#fff" stroke-width="2"/>
+    </marker>
+  </defs>
+
+  <!-- sichtbare Flächen, leicht gefüllt -->
+  <g fill="#ffffff" fill-opacity="0.1" stroke="none">
+    <polygon points="60,195 210,195 230,85 80,85"/>
+    <polygon points="210,195 270,145 290,35 230,85"/>
+    <polygon points="80,85 230,85 290,35 140,35"/>
+  </g>
+
+  <!-- verdeckte Kanten -->
+  <g stroke="#ffffff" stroke-width="2" stroke-dasharray="6 5" stroke-opacity="0.75" fill="none">
+    <line x1="120" y1="145" x2="270" y2="145"/>
+    <line x1="120" y1="145" x2="140" y2="35"/>
+  </g>
+
+  <!-- sichtbare Kanten -->
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" fill="none">
+    <line x1="210" y1="195" x2="270" y2="145"/>
+    <line x1="270" y1="145" x2="290" y2="35"/>
+    <line x1="210" y1="195" x2="230" y2="85"/>
+    <line x1="80" y1="85" x2="230" y2="85"/>
+    <line x1="230" y1="85" x2="290" y2="35"/>
+    <line x1="80" y1="85" x2="140" y2="35"/>
+    <line x1="140" y1="35" x2="290" y2="35"/>
+  </g>
+
+  <!-- aufspannende Vektoren -->
+  <g stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <line x1="60" y1="195" x2="204" y2="195"/>
+    <line x1="60" y1="195" x2="115" y2="149"/>
+    <line x1="60" y1="195" x2="79" y2="91"/>
+  </g>
+  <circle cx="60" cy="195" r="4" fill="#ffffff"/>
+
+  <!-- Beschriftung -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">
+    <text x="128" y="219">a</text>
+    <text x="96" y="186">b</text>
+    <text x="48" y="140">c</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)">
+    <line x1="127" y1="203" x2="141" y2="203"/>
+    <line x1="95" y1="168" x2="109" y2="168"/>
+    <line x1="47" y1="124" x2="61" y2="124"/>
+  </g>
+</svg>

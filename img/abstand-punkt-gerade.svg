@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Abstand eines Punktes P von einer Geraden g über den Lotfußpunkt F">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+  </defs>
+
+  <!-- Gerade g -->
+  <line x1="15" y1="180" x2="285" y2="120" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Lotgerade (gestrichelt) -->
+  <line x1="120.7" y1="18.5" x2="155.4" y2="174.4" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="6 5" stroke-opacity="0.85"/>
+
+  <!-- rechter Winkel bei F -->
+  <path d="M161.7 147.4 L159.1 135.7 L147.4 138.3" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <circle cx="153.5" cy="141.5" r="1.6" fill="#ffffff"/>
+
+  <!-- Verbindungsvektor F -> P -->
+  <line x1="150" y1="150" x2="126.3" y2="44" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <!-- Punkte -->
+  <circle cx="125" cy="38" r="4.5" fill="#ffffff"/>
+  <circle cx="150" cy="150" r="4.5" fill="#ffffff"/>
+
+  <!-- Beschriftung -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">
+    <text x="100" y="44">P</text>
+    <text x="124" y="172">F</text>
+    <text x="262" y="112">g</text>
+  </g>
+  <text x="146" y="100" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">d</text>
+  <text x="115" y="16" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.9">Lotgerade</text>
+</svg>

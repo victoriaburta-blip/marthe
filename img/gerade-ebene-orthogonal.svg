@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Gerade g schneidet die Ebene E senkrecht im Punkt S: Richtungsvektor u und Normalenvektor n sind parallel">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+    <marker id="tiny" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#fff" stroke-width="2"/>
+    </marker>
+  </defs>
+  <polygon points="15,185 190,215 285,160 110,130" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.8" stroke-linejoin="round"/>
+  <line x1="170" y1="20" x2="170" y2="178" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="170" y1="178" x2="170" y2="211.6" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="6 5" stroke-opacity="0.85"/>
+  <line x1="170" y1="211.6" x2="170" y2="223" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="170" y1="112" x2="170" y2="54" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="80" y1="185" x2="80" y2="129" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <circle cx="80" cy="185" r="4.5" fill="#ffffff"/>
+  <path d="M170 166 L181.8 168 L181.8 180" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <circle cx="175.9" cy="173" r="1.6" fill="#ffffff"/>
+  <circle cx="170" cy="178" r="4.5" fill="#ffffff"/>
+  <text x="178" y="88" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">u</text>
+  <line x1="178" y1="71" x2="191" y2="71" stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)"/>
+  <text x="88" y="152" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">n</text>
+  <line x1="88" y1="135" x2="101" y2="135" stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)"/>
+  <text x="178" y="32" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">g</text>
+  <text x="150" y="200" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">S</text>
+  <text x="238" y="178" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">E</text>
+</svg>

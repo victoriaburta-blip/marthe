@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Zwei parallele Ebenen E und F mit parallelen Normalenvektoren">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+    <marker id="tiny" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#fff" stroke-width="2"/>
+    </marker>
+  </defs>
+  <polygon points="15,190 185,215 285,165 115,140" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.8" stroke-linejoin="round"/>
+  <polygon points="15,85 185,110 285,60 115,35" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.8" stroke-linejoin="round"/>
+  <line x1="150" y1="80" x2="150" y2="24" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="150" y1="185" x2="150" y2="132" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <circle cx="150" cy="80" r="4.5" fill="#ffffff"/>
+  <circle cx="150" cy="185" r="4.5" fill="#ffffff"/>
+  <text x="158" y="46" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">n<tspan dy="5" font-size="15">E</tspan></text>
+  <line x1="158" y1="29" x2="171" y2="29" stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)"/>
+  <text x="158" y="152" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">n<tspan dy="5" font-size="15">F</tspan></text>
+  <line x1="158" y1="135" x2="171" y2="135" stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)"/>
+  <text x="228" y="80" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">E</text>
+  <text x="228" y="185" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">F</text>
+</svg>

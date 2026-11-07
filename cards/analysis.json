@@ -1,0 +1,95 @@
+{
+  "topic": "Analysis – Ableitungen",
+  "cards": [
+    {
+      "id": "abl-01",
+      "question": "Was gibt die Ableitung $f'(x_0)$ geometrisch an?",
+      "answer": "Die Steigung der Tangente an den Graphen von $f$ im Punkt $P(x_0 \\mid f(x_0))$ – also die lokale Änderungsrate von $f$ an der Stelle $x_0$.",
+      "hint": "Denke an die Gerade, die den Graphen in einem Punkt berührt."
+    },
+    {
+      "id": "abl-02",
+      "question": "Wie ist die Ableitung $f'(x_0)$ über den Differentialquotienten definiert?",
+      "answer": "$$f'(x_0) = \\lim_{h \\to 0} \\frac{f(x_0 + h) - f(x_0)}{h}$$\nDer Grenzwert der Sekantensteigungen (Differenzenquotienten).",
+      "hint": "Starte mit der Steigung einer Sekante und lass den Abstand $h$ gegen 0 gehen."
+    },
+    {
+      "id": "abl-03",
+      "question": "Wie lautet die Potenzregel?",
+      "answer": "$$f(x) = x^n \\;\\Rightarrow\\; f'(x) = n \\cdot x^{n-1}$$\nGilt für alle reellen Exponenten $n$.",
+      "hint": "Exponent nach vorne, Exponent um 1 verringern."
+    },
+    {
+      "id": "abl-04",
+      "question": "Was ist die Ableitung einer Konstanten, und wie lautet die Faktorregel?",
+      "answer": "Konstante: $(c)' = 0$\nFaktorregel: $$\\big(c \\cdot f(x)\\big)' = c \\cdot f'(x)$$",
+      "hint": "Ein konstanter Faktor bleibt beim Ableiten einfach stehen."
+    },
+    {
+      "id": "abl-05",
+      "question": "Wie lautet die Summenregel?",
+      "answer": "$$\\big(f(x) + g(x)\\big)' = f'(x) + g'(x)$$\nJeder Summand wird einzeln abgeleitet.",
+      "hint": null
+    },
+    {
+      "id": "abl-06",
+      "question": "Wie lautet die Produktregel?",
+      "answer": "$$\\big(u \\cdot v\\big)' = u' \\cdot v + u \\cdot v'$$",
+      "hint": "„Erster abgeleitet mal zweiter plus erster mal zweiter abgeleitet.“"
+    },
+    {
+      "id": "abl-07",
+      "question": "Wie lautet die Quotientenregel?",
+      "answer": "$$\\left(\\frac{u}{v}\\right)' = \\frac{u' \\cdot v - u \\cdot v'}{v^2}, \\quad v \\neq 0$$",
+      "hint": "„NAZ minus ZAN durch N²“ – Nenner mal Ableitung Zähler minus Zähler mal Ableitung Nenner."
+    },
+    {
+      "id": "abl-08",
+      "question": "Wie lautet die Kettenregel?",
+      "answer": "$$\\big(f(g(x))\\big)' = f'(g(x)) \\cdot g'(x)$$\n„Äußere Ableitung mal innere Ableitung.“",
+      "hint": "Beispiel: $\\big((2x+1)^3\\big)' = 3(2x+1)^2 \\cdot 2$"
+    },
+    {
+      "id": "abl-09",
+      "question": "Was ist die Ableitung von $e^x$ und von $e^{kx}$?",
+      "answer": "$$(e^x)' = e^x \\qquad (e^{kx})' = k \\cdot e^{kx}$$",
+      "hint": "Die e-Funktion ist ihre eigene Ableitung – für $e^{kx}$ brauchst du zusätzlich die Kettenregel."
+    },
+    {
+      "id": "abl-10",
+      "question": "Was ist die Ableitung von $\\ln(x)$?",
+      "answer": "$$\\big(\\ln(x)\\big)' = \\frac{1}{x}, \\quad x > 0$$",
+      "hint": null
+    },
+    {
+      "id": "abl-11",
+      "question": "Was sind die Ableitungen von $\\sin(x)$ und $\\cos(x)$?",
+      "answer": "$$(\\sin x)' = \\cos x \\qquad (\\cos x)' = -\\sin x$$",
+      "hint": "Kreislauf: $\\sin \\to \\cos \\to -\\sin \\to -\\cos \\to \\sin$"
+    },
+    {
+      "id": "abl-12",
+      "question": "Wie lautet die Gleichung der Tangente an $f$ im Punkt $(x_0 \\mid f(x_0))$?",
+      "answer": "$$t(x) = f'(x_0) \\cdot (x - x_0) + f(x_0)$$",
+      "hint": "Punkt-Steigungs-Form einer Geraden mit Steigung $m = f'(x_0)$."
+    },
+    {
+      "id": "abl-13",
+      "question": "Was sagt das Vorzeichen von $f'$ über das Monotonieverhalten aus?",
+      "answer": "$f'(x) > 0$ auf einem Intervall $\\Rightarrow$ $f$ ist dort streng monoton steigend.\n$f'(x) < 0$ auf einem Intervall $\\Rightarrow$ $f$ ist dort streng monoton fallend.",
+      "hint": null
+    },
+    {
+      "id": "abl-14",
+      "question": "Wie lauten die notwendige und die hinreichende Bedingung für eine Extremstelle $x_0$?",
+      "answer": "Notwendig: $f'(x_0) = 0$\nHinreichend: $f'(x_0) = 0$ und $f''(x_0) \\neq 0$\n$f''(x_0) < 0$: Hochpunkt, $f''(x_0) > 0$: Tiefpunkt",
+      "hint": "Alternativ: Vorzeichenwechsel von $f'$ an der Stelle $x_0$."
+    },
+    {
+      "id": "abl-15",
+      "question": "Wie lauten die notwendige und die hinreichende Bedingung für eine Wendestelle $x_0$?",
+      "answer": "Notwendig: $f''(x_0) = 0$\nHinreichend: $f''(x_0) = 0$ und $f'''(x_0) \\neq 0$",
+      "hint": "An einer Wendestelle ändert sich das Krümmungsverhalten – die Steigung ist dort extremal."
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Abstand zweier paralleler Geraden g und h über den Lotfußpunkt F des Stützpunkts Q">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+  </defs>
+
+  <!-- parallele Geraden g und h -->
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
+    <line x1="15" y1="190" x2="285" y2="140"/>
+    <line x1="15" y1="95" x2="285" y2="45"/>
+  </g>
+
+  <!-- Lotgerade (gestrichelt) -->
+  <line x1="86.7" y1="63.3" x2="110.3" y2="190.5" stroke="#ffffff" stroke-width="1.6" stroke-dasharray="6 5" stroke-opacity="0.85"/>
+
+  <!-- rechter Winkel bei F -->
+  <path d="M118.8 170.6 L116.6 158.8 L104.8 161" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <circle cx="111" cy="165" r="1.6" fill="#ffffff"/>
+
+  <!-- Verbindungsvektor F -> Q -->
+  <line x1="107" y1="172.8" x2="91.1" y2="86.9" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <!-- Punkte -->
+  <circle cx="90" cy="81" r="4.5" fill="#ffffff"/>
+  <circle cx="107" cy="172.8" r="4.5" fill="#ffffff"/>
+
+  <!-- Beschriftung -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">
+    <text x="62" y="74">Q</text>
+    <text x="116" y="196">F</text>
+    <text x="264" y="137">g</text>
+    <text x="264" y="42">h</text>
+  </g>
+  <text x="106" y="134" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">d</text>
+  <text x="82" y="58" text-anchor="end" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.9">Lotgerade</text>
+</svg>

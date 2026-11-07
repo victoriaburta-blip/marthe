@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Dreiseitige Pyramide, aufgespannt von den Vektoren a, b und c">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+    <marker id="tiny" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#fff" stroke-width="2"/>
+    </marker>
+  </defs>
+
+  <!-- sichtbare Flächen, leicht gefüllt -->
+  <g fill="#ffffff" stroke="none">
+    <polygon points="60,195 230,195 120,40" fill-opacity="0.12"/>
+    <polygon points="230,195 270,130 120,40" fill-opacity="0.06"/>
+  </g>
+
+  <!-- sichtbare Kanten -->
+  <g stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" fill="none">
+    <line x1="230" y1="195" x2="120" y2="40"/>
+    <line x1="230" y1="195" x2="270" y2="130"/>
+    <line x1="270" y1="130" x2="120" y2="40"/>
+  </g>
+
+  <!-- aufspannende Vektoren (b verläuft hinten, daher gestrichelt) -->
+  <g stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)">
+    <line x1="60" y1="195" x2="224" y2="195"/>
+    <line x1="60" y1="195" x2="117" y2="46"/>
+    <line x1="60" y1="195" x2="263" y2="132" stroke-dasharray="10 7"/>
+  </g>
+  <circle cx="60" cy="195" r="4" fill="#ffffff"/>
+
+  <!-- Beschriftung -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">
+    <text x="138" y="219">a</text>
+    <text x="112" y="168">b</text>
+    <text x="64" y="118">c</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)">
+    <line x1="137" y1="203" x2="151" y2="203"/>
+    <line x1="111" y1="150" x2="125" y2="150"/>
+    <line x1="63" y1="102" x2="77" y2="102"/>
+  </g>
+</svg>

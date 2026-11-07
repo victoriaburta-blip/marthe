@@ -1,0 +1,838 @@
+{
+  "topic": "Geometrie",
+  "chapters": [
+    { "id": "vektoren", "name": "Vektoren" },
+    { "id": "geraden", "name": "Geraden" },
+    { "id": "ebenen", "name": "Ebenen" },
+    { "id": "lage", "name": "Lage gemischt" },
+    { "id": "abstand", "name": "Abstand gemischt" }
+  ],
+  "cards": [
+    {
+      "id": "vek-01",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man den Betrag (die Länge) eines Vektors $\\vec a$?",
+      "options": [
+        "$|\\vec a| = \\sqrt{a_1^2 + a_2^2 + a_3^2}$",
+        "$|\\vec a| = a_1 + a_2 + a_3$",
+        "$|\\vec a| = a_1^2 + a_2^2 + a_3^2$",
+        "$|\\vec a| = \\sqrt{a_1 + a_2 + a_3}$"
+      ],
+      "correct": 0,
+      "hint": "Satz des Pythagoras im Raum."
+    },
+    {
+      "id": "vek-02",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man das Skalarprodukt $\\vec a \\cdot \\vec b$?",
+      "options": [
+        "$\\vec a \\cdot \\vec b = \\begin{pmatrix} a_1 b_1 \\\\ a_2 b_2 \\\\ a_3 b_3 \\end{pmatrix}$",
+        "$\\vec a \\cdot \\vec b = a_1 b_1 + a_2 b_2 + a_3 b_3$",
+        "$\\vec a \\cdot \\vec b = a_1 b_2 + a_2 b_3 + a_3 b_1$",
+        "$\\vec a \\cdot \\vec b = |\\vec a| + |\\vec b|$"
+      ],
+      "correct": 1,
+      "hint": "Das Ergebnis ist eine Zahl, kein Vektor."
+    },
+    {
+      "id": "vek-03",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man den Winkel $\\alpha$ zwischen zwei Vektoren $\\vec a$ und $\\vec b$?",
+      "options": [
+        "$\\sin \\alpha = \\dfrac{\\vec a \\cdot \\vec b}{|\\vec a| \\cdot |\\vec b|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec a| \\cdot |\\vec b|}{\\vec a \\cdot \\vec b}$",
+        "$\\cos \\alpha = \\dfrac{\\vec a \\cdot \\vec b}{|\\vec a| \\cdot |\\vec b|}$",
+        "$\\cos \\alpha = \\dfrac{\\vec a \\cdot \\vec b}{|\\vec a| + |\\vec b|}$"
+      ],
+      "correct": 2,
+      "hint": "Skalarprodukt geteilt durch das Produkt der Längen."
+    },
+    {
+      "id": "vek-04",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man den Einheitsvektor $\\vec a_0$ zu einem Vektor $\\vec a$?",
+      "options": [
+        "$\\vec a_0 = |\\vec a| \\cdot \\vec a$",
+        "$\\vec a_0 = \\dfrac{1}{a_1 + a_2 + a_3} \\cdot \\vec a$",
+        "$\\vec a_0 = \\dfrac{1}{|\\vec a|^2} \\cdot \\vec a$",
+        "$\\vec a_0 = \\dfrac{1}{|\\vec a|} \\cdot \\vec a$"
+      ],
+      "correct": 3,
+      "hint": "Ein Einheitsvektor hat die Länge 1 und zeigt in dieselbe Richtung wie $\\vec a$."
+    },
+    {
+      "id": "vek-05",
+      "chapter": "vektoren",
+      "question": "Wann sind zwei Vektoren $\\vec a$ und $\\vec b$ (beide $\\neq \\vec 0$) orthogonal zueinander?",
+      "options": [
+        "$\\vec a \\cdot \\vec b = 0$",
+        "$\\vec a \\times \\vec b = \\vec 0$",
+        "$|\\vec a| = |\\vec b|$",
+        "$\\vec a \\cdot \\vec b = 1$"
+      ],
+      "correct": 0,
+      "hint": "Denke an das Skalarprodukt."
+    },
+    {
+      "id": "vek-06",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man den Mittelpunkt $M$ der Strecke $\\overline{AB}$?",
+      "options": [
+        "$\\vec m = \\vec b - \\vec a$",
+        "$\\vec m = \\dfrac{1}{2}\\left(\\vec a + \\vec b\\right)$",
+        "$\\vec m = \\dfrac{1}{2}\\left(\\vec b - \\vec a\\right)$",
+        "$\\vec m = \\vec a + \\vec b$"
+      ],
+      "correct": 1,
+      "hint": "Der Mittelwert der Koordinaten von $A$ und $B$."
+    },
+    {
+      "id": "vek-07",
+      "chapter": "vektoren",
+      "question": "Wann sind zwei Vektoren $\\vec a$ und $\\vec b$ linear abhängig?",
+      "options": [
+        "Wenn $\\vec a \\cdot \\vec b = 0$ gilt.",
+        "Wenn $|\\vec a| = |\\vec b|$ gilt.",
+        "Wenn es eine Zahl $k$ gibt mit $\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix} = \\begin{pmatrix} b_1 + k \\\\ b_2 + k \\\\ b_3 + k \\end{pmatrix}$.",
+        "Wenn es eine Zahl $k$ gibt mit $\\begin{pmatrix} a_1 \\\\ a_2 \\\\ a_3 \\end{pmatrix} = k \\cdot \\begin{pmatrix} b_1 \\\\ b_2 \\\\ b_3 \\end{pmatrix}$."
+      ],
+      "correct": 3,
+      "hint": "Einer der beiden Vektoren ist ein Vielfaches des anderen."
+    },
+    {
+      "id": "vek-13",
+      "chapter": "vektoren",
+      "question": "Wann sind zwei Vektoren $\\vec a$ und $\\vec b$ parallel?",
+      "options": [
+        "Wenn sie gleich lang sind.",
+        "Wenn sie linear abhängig sind, also wenn der eine Vektor ein Vielfaches des anderen ist.",
+        "Wenn ihr Skalarprodukt null ist.",
+        "Wenn sie linear unabhängig sind."
+      ],
+      "correct": 1,
+      "hint": "Parallele Vektoren zeigen in dieselbe oder in die entgegengesetzte Richtung."
+    },
+    {
+      "id": "vek-08",
+      "chapter": "vektoren",
+      "question": "Wie ermittelt man einen Normalenvektor $\\vec n$, der senkrecht auf den Vektoren $\\vec a$ und $\\vec b$ steht?",
+      "options": [
+        "$\\vec n = \\vec a \\cdot \\vec b$",
+        "$\\vec n = \\vec a + \\vec b$",
+        "$\\vec n = \\vec b - \\vec a$",
+        "$\\vec n = \\vec a \\times \\vec b$"
+      ],
+      "correct": 3,
+      "hint": "Das Vektorprodukt (Kreuzprodukt) liefert einen Vektor, der auf beiden senkrecht steht."
+    },
+    {
+      "id": "vek-09",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man den Flächeninhalt eines Dreiecks $ABC$ mithilfe des Vektorprodukts?",
+      "options": [
+        "$A = \\dfrac{1}{2} \\left| \\overrightarrow{AB} \\times \\overrightarrow{AC} \\right|$",
+        "$A = \\left| \\overrightarrow{AB} \\times \\overrightarrow{AC} \\right|$",
+        "$A = \\dfrac{1}{2} \\, \\overrightarrow{AB} \\cdot \\overrightarrow{AC}$",
+        "$A = \\dfrac{1}{2} \\left| \\overrightarrow{AB} \\right| \\cdot \\left| \\overrightarrow{AC} \\right|$"
+      ],
+      "correct": 0,
+      "hint": "Ein Dreieck ist ein halbes Parallelogramm."
+    },
+    {
+      "id": "vek-10",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man den Flächeninhalt eines Parallelogramms, das von $\\vec a$ und $\\vec b$ aufgespannt wird?",
+      "options": [
+        "$A = \\dfrac{1}{2} \\left| \\vec a \\times \\vec b \\right|$",
+        "$A = \\left| \\vec a \\times \\vec b \\right|$",
+        "$A = \\vec a \\cdot \\vec b$",
+        "$A = |\\vec a| + |\\vec b|$"
+      ],
+      "correct": 1,
+      "hint": "Die Länge des Vektorprodukts entspricht genau dieser Fläche."
+    },
+    {
+      "id": "vek-11",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man das Volumen eines Spats, der von $\\vec a$, $\\vec b$ und $\\vec c$ aufgespannt wird?",
+      "image": "img/spat.svg",
+      "imageAlt": "Ein Spat (schiefer Quader), aufgespannt von den Vektoren a, b und c, die von einer gemeinsamen Ecke ausgehen.",
+      "options": [
+        "$V = \\dfrac{1}{3} \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$",
+        "$V = \\dfrac{1}{6} \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$",
+        "$V = \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$",
+        "$V = \\left| \\vec a \\times \\vec b \\right| \\cdot |\\vec c|$"
+      ],
+      "correct": 2,
+      "hint": "Grundfläche (Parallelogramm) mal Höhe – das Spatprodukt erledigt beides auf einmal."
+    },
+    {
+      "id": "vek-12",
+      "chapter": "vektoren",
+      "question": "Wie berechnet man das Volumen einer dreiseitigen Pyramide, die von $\\vec a$, $\\vec b$ und $\\vec c$ aufgespannt wird?",
+      "image": "img/pyramide.svg",
+      "imageAlt": "Eine dreiseitige Pyramide (Tetraeder), aufgespannt von den Vektoren a, b und c, die von einer gemeinsamen Ecke ausgehen.",
+      "options": [
+        "$V = \\dfrac{1}{3} \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$",
+        "$V = \\dfrac{1}{2} \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$",
+        "$V = \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$",
+        "$V = \\dfrac{1}{6} \\left| \\left(\\vec a \\times \\vec b\\right) \\cdot \\vec c \\right|$"
+      ],
+      "correct": 3,
+      "hint": "Die dreiseitige Pyramide passt sechsmal in den Spat mit denselben Vektoren.",
+      "explanation": "$\\tfrac{1}{6}$ = $\\tfrac{1}{3}$ (Pyramide) · $\\tfrac{1}{2}$ (dreieckige statt parallelogrammförmige Grundfläche)."
+    },
+    {
+      "id": "ger-01",
+      "chapter": "geraden",
+      "question": "Aus welchen Bestandteilen besteht eine Geradengleichung in Parameterform $g: \\vec x = \\vec p + t \\cdot \\vec u$?",
+      "options": [
+        "Aus einem Stützvektor $\\vec p$ und einem Richtungsvektor $\\vec u$.",
+        "Aus einem Stützvektor $\\vec p$ und einem Normalenvektor $\\vec u$.",
+        "Aus zwei Richtungsvektoren $\\vec p$ und $\\vec u$.",
+        "Aus zwei Stützvektoren $\\vec p$ und $\\vec u$."
+      ],
+      "correct": 0,
+      "hint": "Man braucht einen Punkt, durch den die Gerade geht, und die Richtung, in die sie verläuft.",
+      "explanation": "$\\vec p$ ist der Ortsvektor eines Punktes der Geraden, $\\vec u \\neq \\vec 0$ gibt ihre Richtung an, und $t \\in \\mathbb{R}$ ist der Parameter."
+    },
+    {
+      "id": "ger-02",
+      "chapter": "geraden",
+      "question": "Gegeben sind zwei Punkte $A$ und $B$. Wie lautet eine Gleichung der Geraden $g$ durch $A$ und $B$?",
+      "options": [
+        "$g: \\vec x = \\overrightarrow{AB} + t \\cdot \\overrightarrow{OA}$",
+        "$g: \\vec x = \\overrightarrow{OA} + t \\cdot \\overrightarrow{OB}$",
+        "$g: \\vec x = \\overrightarrow{OA} + t \\cdot \\overrightarrow{AB}$",
+        "$g: \\vec x = \\overrightarrow{OB} + t \\cdot \\overrightarrow{OA}$"
+      ],
+      "correct": 2,
+      "hint": "Stützvektor: Ortsvektor eines der beiden Punkte. Richtungsvektor: Verbindungsvektor der beiden Punkte.",
+      "explanation": "Der Richtungsvektor ist $\\overrightarrow{AB} = \\vec b - \\vec a$. Für $t = 0$ erhält man $A$, für $t = 1$ erhält man $B$."
+    },
+    {
+      "id": "ger-03",
+      "chapter": "geraden",
+      "question": "Welche dieser Geraden verläuft parallel zur $x_1$‑Achse?",
+      "options": [
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 3 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 1 \\end{pmatrix}$"
+      ],
+      "correct": 1,
+      "hint": "Es kommt nur auf den Richtungsvektor an.",
+      "explanation": "Die $x_1$‑Achse hat den Richtungsvektor $\\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\end{pmatrix}$. Parallel dazu ist jede Gerade, deren Richtungsvektor ein Vielfaches davon ist – also nur in der 1. Koordinate ungleich null."
+    },
+    {
+      "id": "ger-04",
+      "chapter": "geraden",
+      "question": "Welche dieser Geraden verläuft parallel zur $x_2$‑Achse?",
+      "options": [
+        "$g: \\vec x = \\begin{pmatrix} 4 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 2 \\\\ 0 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 4 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 0 \\\\ 3 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 4 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 3 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 4 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$"
+      ],
+      "correct": 2,
+      "hint": "Es kommt nur auf den Richtungsvektor an. Auch ein Vielfaches zeigt in dieselbe Richtung.",
+      "explanation": "Die $x_2$‑Achse hat den Richtungsvektor $\\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}$. $\\begin{pmatrix} 0 \\\\ 3 \\\\ 0 \\end{pmatrix}$ ist das 3-Fache davon, die Gerade ist also parallel zur $x_2$‑Achse."
+    },
+    {
+      "id": "ger-05",
+      "chapter": "geraden",
+      "question": "Welche dieser Geraden verläuft parallel zur $x_3$‑Achse?",
+      "options": [
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 5 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 0 \\\\ -2 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 5 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 5 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 5 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 1 \\\\ 1 \\end{pmatrix}$"
+      ],
+      "correct": 0,
+      "hint": "Es kommt nur auf den Richtungsvektor an. Auch ein negatives Vielfaches ist parallel.",
+      "explanation": "Die $x_3$‑Achse hat den Richtungsvektor $\\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$. $\\begin{pmatrix} 0 \\\\ 0 \\\\ -2 \\end{pmatrix}$ ist das $(-2)$-Fache davon."
+    },
+    {
+      "id": "ger-06",
+      "chapter": "geraden",
+      "question": "Welche dieser Geraden verläuft parallel zur $x_1x_2$‑Ebene?",
+      "options": [
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 4 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 2 \\\\ -1 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 1 \\\\ 2 \\\\ 3 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 3 \\\\ 0 \\\\ 2 \\end{pmatrix}$"
+      ],
+      "correct": 1,
+      "hint": "In der $x_1x_2$‑Ebene ist $x_3 = 0$. Welche Koordinate des Richtungsvektors darf sich also nicht ändern?",
+      "explanation": "Eine Gerade ist parallel zur $x_1x_2$‑Ebene, wenn die $x_3$-Koordinate ihres Richtungsvektors null ist. Da der Stützpunkt $x_3 = 3$ hat, liegt die Gerade nicht in der Ebene, sondern echt parallel dazu."
+    },
+    {
+      "id": "ger-07",
+      "chapter": "geraden",
+      "question": "Welche dieser Geraden verläuft parallel zur $x_2x_3$‑Ebene?",
+      "options": [
+        "$g: \\vec x = \\begin{pmatrix} 3 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 2 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 3 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 2 \\\\ 0 \\\\ 1 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 3 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 2 \\\\ -1 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 3 \\\\ 1 \\\\ 2 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\end{pmatrix}$"
+      ],
+      "correct": 2,
+      "hint": "In der $x_2x_3$‑Ebene ist $x_1 = 0$. Welche Koordinate des Richtungsvektors muss also null sein?",
+      "explanation": "Eine Gerade ist parallel zur $x_2x_3$‑Ebene, wenn die $x_1$-Koordinate ihres Richtungsvektors null ist. Da der Stützpunkt $x_1 = 3$ hat, liegt die Gerade nicht in der Ebene, sondern echt parallel dazu."
+    },
+    {
+      "id": "ger-08",
+      "chapter": "geraden",
+      "question": "Welche dieser Geraden verläuft parallel zur $x_1x_3$‑Ebene?",
+      "options": [
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 3 \\\\ 0 \\\\ 1 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 2 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix}$",
+        "$g: \\vec x = \\begin{pmatrix} 2 \\\\ 4 \\\\ 1 \\end{pmatrix} + t \\cdot \\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}$"
+      ],
+      "correct": 0,
+      "hint": "In der $x_1x_3$‑Ebene ist $x_2 = 0$. Welche Koordinate des Richtungsvektors muss also null sein?",
+      "explanation": "Eine Gerade ist parallel zur $x_1x_3$‑Ebene, wenn die $x_2$-Koordinate ihres Richtungsvektors null ist. Da der Stützpunkt $x_2 = 4$ hat, liegt die Gerade nicht in der Ebene, sondern echt parallel dazu."
+    },
+    {
+      "id": "ger-09",
+      "chapter": ["geraden", "lage"],
+      "question": "Welche Lagen können zwei Geraden im Raum zueinander haben?",
+      "options": [
+        "Sie können nur parallel sein oder sich schneiden.",
+        "Sie können echt parallel oder identisch sein oder sich schneiden.",
+        "Sie können parallel, orthogonal oder windschief sein.",
+        "Sie können echt parallel oder identisch sein, sich schneiden oder windschief sein."
+      ],
+      "correct": 3,
+      "hint": "Es sind vier Fälle – einer davon ist nur im Raum möglich, nicht in der Ebene.",
+      "explanation": "Windschief heißt: Die Geraden sind nicht parallel und haben trotzdem keinen Schnittpunkt."
+    },
+    {
+      "id": "ger-10",
+      "chapter": ["geraden", "lage"],
+      "question": "Woran erkennt man, dass zwei Geraden $g: \\vec x = \\vec p + t \\cdot \\vec u$ und $h: \\vec x = \\vec q + s \\cdot \\vec v$ parallel sind?",
+      "options": [
+        "Ihre Stützvektoren $\\vec p$ und $\\vec q$ sind Vielfache voneinander.",
+        "Ihre Richtungsvektoren $\\vec u$ und $\\vec v$ sind Vielfache voneinander.",
+        "Das Skalarprodukt ihrer Richtungsvektoren ist null.",
+        "Ihre Richtungsvektoren $\\vec u$ und $\\vec v$ sind gleich lang."
+      ],
+      "correct": 1,
+      "hint": "Parallele Geraden haben dieselbe Richtung.",
+      "explanation": "Sind die Richtungsvektoren Vielfache, prüft man danach, ob der Stützpunkt von $h$ auf $g$ liegt: Wenn ja, sind die Geraden identisch, sonst echt parallel."
+    },
+    {
+      "id": "ger-11",
+      "chapter": ["geraden", "lage"],
+      "question": "Woran erkennt man, dass zwei Geraden $g: \\vec x = \\vec p + t \\cdot \\vec u$ und $h: \\vec x = \\vec q + s \\cdot \\vec v$ orthogonal zueinander sind?",
+      "options": [
+        "Das Skalarprodukt ihrer Richtungsvektoren ist null: $\\vec u \\cdot \\vec v = 0$.",
+        "Das Vektorprodukt ihrer Richtungsvektoren ist der Nullvektor: $\\vec u \\times \\vec v = \\vec 0$.",
+        "Das Skalarprodukt ihrer Stützvektoren ist null: $\\vec p \\cdot \\vec q = 0$.",
+        "Das Skalarprodukt ihrer Richtungsvektoren ist eins: $\\vec u \\cdot \\vec v = 1$."
+      ],
+      "correct": 0,
+      "hint": "Orthogonal heißt: Die Richtungen stehen senkrecht aufeinander.",
+      "explanation": "Orthogonale Geraden müssen sich nicht schneiden – auch windschiefe Geraden können orthogonal zueinander sein."
+    },
+    {
+      "id": "ger-12",
+      "chapter": ["geraden", "lage"],
+      "question": "Wie berechnet man den Schnittwinkel $\\alpha$ zweier sich schneidender Geraden $g$ und $h$ mit den Richtungsvektoren $\\vec u$ und $\\vec v$?",
+      "options": [
+        "$\\sin \\alpha = \\dfrac{|\\vec u \\cdot \\vec v|}{|\\vec u| \\cdot |\\vec v|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec u| \\cdot |\\vec v|}{|\\vec u \\cdot \\vec v|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec u \\cdot \\vec v|}{|\\vec u| \\cdot |\\vec v|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec u \\times \\vec v|}{|\\vec u| \\cdot |\\vec v|}$"
+      ],
+      "correct": 2,
+      "hint": "Wie beim Winkel zwischen zwei Vektoren – aber mit Betragsstrichen im Zähler.",
+      "explanation": "Durch den Betrag im Zähler liegt der Schnittwinkel immer zwischen $0^\\circ$ und $90^\\circ$. (Mit $\\sin$ berechnet man den Winkel zwischen Gerade und Ebene.)"
+    },
+    {
+      "id": "ger-13",
+      "chapter": ["geraden", "abstand"],
+      "question": "Wie berechnet man den Abstand $d$ eines Punktes $P$ von einer Geraden $g$?",
+      "image": "img/abstand-punkt-gerade.svg",
+      "imageAlt": "Eine Gerade g und ein Punkt P außerhalb. Die Lotgerade durch P trifft g senkrecht im Lotfußpunkt F. Der Vektor von F nach P hat die Länge d.",
+      "options": [
+        "Man bestimmt den Lotfußpunkt $F$ von $P$ auf $g$. Der Abstand ist der Betrag des Verbindungsvektors: $d = |\\overrightarrow{FP}|$.",
+        "Man wählt den Stützpunkt $A$ von $g$. Der Abstand ist der Betrag des Verbindungsvektors: $d = |\\overrightarrow{AP}|$.",
+        "Man bestimmt den Lotfußpunkt $F$ von $P$ auf $g$. Der Abstand ist der Betrag seines Ortsvektors: $d = |\\overrightarrow{OF}|$.",
+        "Man wählt den Stützpunkt $A$ von $g$. Der Abstand ist das Skalarprodukt: $d = \\overrightarrow{AP} \\cdot \\vec u$."
+      ],
+      "correct": 0,
+      "hint": "Der kürzeste Weg von $P$ zur Geraden steht senkrecht auf ihr.",
+      "explanation": "Den Lotfußpunkt findet man mit dem Ansatz $\\overrightarrow{FP} \\cdot \\vec u = 0$, wobei $F$ ein allgemeiner Punkt der Geraden ist (Koordinaten mit $t$). Daraus berechnet man $t$ und damit $F$."
+    },
+    {
+      "id": "ger-14",
+      "chapter": ["geraden", "abstand"],
+      "question": "Wie berechnet man den Abstand $d$ zweier paralleler Geraden $g$ und $h$?",
+      "image": "img/abstand-parallele-geraden.svg",
+      "imageAlt": "Zwei parallele Geraden g und h. Vom Stützpunkt Q der Geraden h verläuft die Lotgerade senkrecht zu g und trifft g im Lotfußpunkt F. Der Vektor von F nach Q hat die Länge d.",
+      "options": [
+        "Man berechnet den Abstand der beiden Stützpunkte $P$ von $g$ und $Q$ von $h$: $d = |\\overrightarrow{PQ}|$.",
+        "Man bestimmt den Schnittpunkt $S$ der beiden Geraden. Der Abstand ist $d = |\\overrightarrow{OS}|$.",
+        "Man bestimmt den Lotfußpunkt $F$ des Stützpunkts $Q$ von $h$ auf $g$. Der Abstand ist $d = |\\overrightarrow{FQ}|$.",
+        "Der Abstand ist die Differenz der Längen der Richtungsvektoren: $d = \\big|\\,|\\vec u| - |\\vec v|\\,\\big|$."
+      ],
+      "correct": 2,
+      "hint": "Parallele Geraden haben überall denselben Abstand. Es reicht also ein einziger Punkt von $h$.",
+      "explanation": "Damit wird die Aufgabe zum Abstand Punkt–Gerade: Man berechnet den Abstand des Stützpunkts $Q$ von $h$ zur Geraden $g$."
+    },
+    {
+      "id": "ger-15",
+      "chapter": ["geraden", "abstand"],
+      "question": "Wie berechnet man den Abstand $d$ zweier windschiefer Geraden $g: \\vec x = \\vec p + t \\cdot \\vec u$ und $h: \\vec x = \\vec q + s \\cdot \\vec v$?",
+      "image": "img/abstand-windschief.svg",
+      "imageAlt": "Zwei windschiefe Geraden g und h. Die Gerade g liegt in einer Hilfsebene E, die parallel zu h ist. Vom Punkt Q auf h führt das Lot senkrecht auf E; seine Länge ist d.",
+      "options": [
+        "Man berechnet den Abstand der beiden Stützpunkte $P$ und $Q$: $d = |\\overrightarrow{PQ}|$.",
+        "Man bestimmt den Schnittpunkt $S$ der beiden Geraden. Der Abstand ist $d = |\\overrightarrow{PS}|$.",
+        "Man legt durch $g$ eine Hilfsebene $E$, die orthogonal zu $h$ ist. Der Abstand ist der Abstand des Stützpunkts $Q$ von $h$ zu $E$.",
+        "Man legt durch $g$ eine Hilfsebene $E$, die parallel zu $h$ ist. Der Abstand ist der Abstand des Stützpunkts $Q$ von $h$ zu $E$."
+      ],
+      "correct": 3,
+      "hint": "Die Hilfsebene enthält $g$ und wird von $\\vec u$ und $\\vec v$ aufgespannt.",
+      "explanation": "Die Hilfsebene $E$ hat den Normalenvektor $\\vec n = \\vec u \\times \\vec v$. Weil $h$ parallel zu $E$ ist, hat jeder Punkt von $h$ denselben Abstand zu $E$: $$d = \\frac{|(\\vec q - \\vec p) \\cdot \\vec n|}{|\\vec n|}$$"
+    },
+    {
+      "id": "ebe-01",
+      "chapter": "ebenen",
+      "question": "Welche drei Darstellungsformen gibt es für die Gleichung einer Ebene?",
+      "options": [
+        "Parametergleichung, Normalengleichung und Koordinatengleichung.",
+        "Parametergleichung, Geradengleichung und Koordinatengleichung.",
+        "Parametergleichung, Normalengleichung und Spurgleichung.",
+        "Koordinatengleichung, Abstandsgleichung und Lotgleichung."
+      ],
+      "correct": 0,
+      "hint": "Eine Form arbeitet mit Spannvektoren, eine mit dem Normalenvektor und eine nur mit $x_1$, $x_2$ und $x_3$.",
+      "explanation": "Parametergleichung: $E: \\vec x = \\vec p + r \\cdot \\vec u + s \\cdot \\vec v$\nNormalengleichung: $E: (\\vec x - \\vec p) \\cdot \\vec n = 0$\nKoordinatengleichung: $E: n_1 x_1 + n_2 x_2 + n_3 x_3 = d$"
+    },
+    {
+      "id": "ebe-02",
+      "chapter": "ebenen",
+      "question": "Welche Form der Ebenengleichung enthält einen Stützvektor und zwei Spannvektoren?",
+      "options": [
+        "Die Normalengleichung $E: (\\vec x - \\vec p) \\cdot \\vec n = 0$.",
+        "Die Parametergleichung $E: \\vec x = \\vec p + r \\cdot \\vec u + s \\cdot \\vec v$.",
+        "Die Koordinatengleichung $E: n_1 x_1 + n_2 x_2 + n_3 x_3 = d$.",
+        "Die Hessesche Normalform $E: \\dfrac{(\\vec x - \\vec p) \\cdot \\vec n}{|\\vec n|} = 0$."
+      ],
+      "correct": 1,
+      "hint": "Zwei Spannvektoren brauchen zwei Parameter.",
+      "explanation": "$\\vec p$ ist der Stützvektor, $\\vec u$ und $\\vec v$ sind die Spannvektoren. Sie dürfen nicht parallel sein (sie müssen linear unabhängig sein)."
+    },
+    {
+      "id": "ebe-03",
+      "chapter": "ebenen",
+      "question": "Wie erhält man einen Normalenvektor $\\vec n$ der Ebene $E: \\vec x = \\vec p + r \\cdot \\vec u + s \\cdot \\vec v$?",
+      "options": [
+        "Mit dem Skalarprodukt der beiden Spannvektoren: $\\vec n = \\vec u \\cdot \\vec v$.",
+        "Durch Addieren der beiden Spannvektoren: $\\vec n = \\vec u + \\vec v$.",
+        "Mit dem Vektorprodukt aus Stützvektor und Spannvektor: $\\vec n = \\vec p \\times \\vec u$.",
+        "Mit dem Vektorprodukt der beiden Spannvektoren: $\\vec n = \\vec u \\times \\vec v$."
+      ],
+      "correct": 3,
+      "hint": "Der Normalenvektor steht senkrecht auf beiden Spannvektoren.",
+      "explanation": "Das Vektorprodukt $\\vec u \\times \\vec v$ steht senkrecht auf $\\vec u$ und auf $\\vec v$ – also senkrecht auf der Ebene."
+    },
+    {
+      "id": "ebe-04",
+      "chapter": "ebenen",
+      "question": "Welche dieser Ebenen verläuft parallel zur $x_1$‑Achse?",
+      "options": [
+        "$E: x_1 + 2x_2 = 4$",
+        "$E: 2x_2 + 3x_3 = 6$",
+        "$E: 3x_1 + x_3 = 3$",
+        "$E: x_1 + x_2 + x_3 = 5$"
+      ],
+      "correct": 1,
+      "hint": "Achte darauf, welche Variable in der Koordinatengleichung fehlt.",
+      "explanation": "Fehlt $x_1$ in der Koordinatengleichung, ist die 1. Koordinate des Normalenvektors null. Dann steht $\\vec n = \\begin{pmatrix} 0 \\\\ 2 \\\\ 3 \\end{pmatrix}$ senkrecht auf der $x_1$‑Achse, und die Ebene ist parallel zu ihr."
+    },
+    {
+      "id": "ebe-05",
+      "chapter": "ebenen",
+      "question": "Welche dieser Ebenen verläuft parallel zur $x_2$‑Achse?",
+      "options": [
+        "$E: x_2 + 2x_3 = 4$",
+        "$E: 2x_1 + 3x_2 = 6$",
+        "$E: 4x_1 - x_3 = 2$",
+        "$E: x_1 - x_2 + x_3 = 1$"
+      ],
+      "correct": 2,
+      "hint": "Achte darauf, welche Variable in der Koordinatengleichung fehlt.",
+      "explanation": "In $4x_1 - x_3 = 2$ fehlt $x_2$. Der Normalenvektor $\\begin{pmatrix} 4 \\\\ 0 \\\\ -1 \\end{pmatrix}$ steht also senkrecht auf der $x_2$‑Achse, und die Ebene ist parallel zu ihr."
+    },
+    {
+      "id": "ebe-06",
+      "chapter": "ebenen",
+      "question": "Welche dieser Ebenen verläuft parallel zur $x_3$‑Achse?",
+      "options": [
+        "$E: x_1 + 2x_2 = 4$",
+        "$E: 3x_1 + x_3 = 3$",
+        "$E: 2x_2 - x_3 = 2$",
+        "$E: x_1 + x_2 + 2x_3 = 4$"
+      ],
+      "correct": 0,
+      "hint": "Achte darauf, welche Variable in der Koordinatengleichung fehlt.",
+      "explanation": "In $x_1 + 2x_2 = 4$ fehlt $x_3$. Der Normalenvektor $\\begin{pmatrix} 1 \\\\ 2 \\\\ 0 \\end{pmatrix}$ steht also senkrecht auf der $x_3$‑Achse, und die Ebene ist parallel zu ihr."
+    },
+    {
+      "id": "ebe-07",
+      "chapter": "ebenen",
+      "question": "Welche dieser Ebenen verläuft parallel zur $x_1x_2$‑Ebene?",
+      "options": [
+        "$E: x_1 = 4$",
+        "$E: x_2 = 4$",
+        "$E: x_1 + x_2 = 4$",
+        "$E: x_3 = 4$"
+      ],
+      "correct": 3,
+      "hint": "Alle Punkte einer solchen Ebene liegen auf derselben „Höhe“.",
+      "explanation": "Kommen $x_1$ und $x_2$ nicht vor, ist der Normalenvektor $\\begin{pmatrix} 0 \\\\ 0 \\\\ 1 \\end{pmatrix}$ – derselbe wie bei der $x_1x_2$‑Ebene. Die Ebene $x_3 = 4$ liegt also parallel zur $x_1x_2$‑Ebene, 4 Einheiten darüber."
+    },
+    {
+      "id": "ebe-08",
+      "chapter": "ebenen",
+      "question": "Welche dieser Ebenen verläuft parallel zur $x_2x_3$‑Ebene?",
+      "options": [
+        "$E: x_3 = -2$",
+        "$E: x_1 = -2$",
+        "$E: x_2 = -2$",
+        "$E: x_2 + x_3 = -2$"
+      ],
+      "correct": 1,
+      "hint": "In der Gleichung darf nur die Variable vorkommen, die nicht im Namen der Ebene steht.",
+      "explanation": "Kommen $x_2$ und $x_3$ nicht vor, ist der Normalenvektor $\\begin{pmatrix} 1 \\\\ 0 \\\\ 0 \\end{pmatrix}$ – derselbe wie bei der $x_2x_3$‑Ebene."
+    },
+    {
+      "id": "ebe-09",
+      "chapter": "ebenen",
+      "question": "Welche dieser Ebenen verläuft parallel zur $x_1x_3$‑Ebene?",
+      "options": [
+        "$E: 2x_1 = 5$",
+        "$E: 2x_3 = 5$",
+        "$E: 2x_2 = 5$",
+        "$E: 2x_1 + 2x_3 = 5$"
+      ],
+      "correct": 2,
+      "hint": "In der Gleichung darf nur die Variable vorkommen, die nicht im Namen der Ebene steht.",
+      "explanation": "Kommen $x_1$ und $x_3$ nicht vor, ist der Normalenvektor ein Vielfaches von $\\begin{pmatrix} 0 \\\\ 1 \\\\ 0 \\end{pmatrix}$ – wie bei der $x_1x_3$‑Ebene. $2x_2 = 5$ heißt $x_2 = 2{,}5$."
+    },
+    {
+      "id": "ebe-10",
+      "chapter": "ebenen",
+      "question": "Wie lautet die Koordinatengleichung der $x_1x_2$‑Ebene?",
+      "options": [
+        "$x_1 = 0$",
+        "$x_2 = 0$",
+        "$x_3 = 0$",
+        "$x_1 + x_2 = 0$"
+      ],
+      "correct": 2,
+      "hint": "Welche Koordinate ist für alle Punkte der $x_1x_2$‑Ebene gleich?",
+      "explanation": "In der $x_1x_2$‑Ebene können $x_1$ und $x_2$ beliebig sein, aber $x_3$ ist immer null."
+    },
+    {
+      "id": "ebe-11",
+      "chapter": "ebenen",
+      "question": "Wie lautet die Koordinatengleichung der $x_2x_3$‑Ebene?",
+      "options": [
+        "$x_1 = 0$",
+        "$x_2 = 0$",
+        "$x_3 = 0$",
+        "$x_2 + x_3 = 0$"
+      ],
+      "correct": 0,
+      "hint": "Welche Koordinate ist für alle Punkte der $x_2x_3$‑Ebene gleich?",
+      "explanation": "In der $x_2x_3$‑Ebene können $x_2$ und $x_3$ beliebig sein, aber $x_1$ ist immer null."
+    },
+    {
+      "id": "ebe-12",
+      "chapter": "ebenen",
+      "question": "Wie lautet die Koordinatengleichung der $x_1x_3$‑Ebene?",
+      "options": [
+        "$x_1 = 0$",
+        "$x_2 = 0$",
+        "$x_3 = 0$",
+        "$x_1 + x_3 = 0$"
+      ],
+      "correct": 1,
+      "hint": "Welche Koordinate ist für alle Punkte der $x_1x_3$‑Ebene gleich?",
+      "explanation": "In der $x_1x_3$‑Ebene können $x_1$ und $x_3$ beliebig sein, aber $x_2$ ist immer null."
+    },
+    {
+      "id": "ebe-13",
+      "chapter": "ebenen",
+      "question": "Gegeben sind drei Punkte $A$, $B$ und $C$, die nicht auf einer Geraden liegen. Wie lautet eine Gleichung der Ebene $E$ durch $A$, $B$ und $C$?",
+      "options": [
+        "$E: \\vec x = \\overrightarrow{OA} + r \\cdot \\overrightarrow{OB} + s \\cdot \\overrightarrow{OC}$",
+        "$E: \\vec x = \\overrightarrow{OA} + r \\cdot \\overrightarrow{AB} + s \\cdot \\overrightarrow{AC}$",
+        "$E: \\vec x = \\overrightarrow{AB} + r \\cdot \\overrightarrow{OA} + s \\cdot \\overrightarrow{AC}$",
+        "$E: \\vec x = \\overrightarrow{OA} + r \\cdot \\overrightarrow{AB} + s \\cdot \\overrightarrow{BA}$"
+      ],
+      "correct": 1,
+      "hint": "Stützvektor: Ortsvektor eines Punktes. Spannvektoren: Verbindungsvektoren von diesem Punkt zu den beiden anderen.",
+      "explanation": "Bei $\\overrightarrow{AB}$ und $\\overrightarrow{BA}$ wären die Spannvektoren parallel – damit erhält man keine Ebene, sondern nur eine Gerade."
+    },
+    {
+      "id": "ebe-14",
+      "chapter": "ebenen",
+      "question": "Was sind die Spurpunkte einer Ebene?",
+      "options": [
+        "Die Schnittpunkte der Ebene mit den Koordinatenebenen.",
+        "Die Punkte der Ebene, die dem Ursprung am nächsten liegen.",
+        "Die Schnittpunkte der Ebene mit den Koordinatenachsen.",
+        "Die Punkte, aus denen man die Parametergleichung der Ebene aufstellt."
+      ],
+      "correct": 2,
+      "hint": "Es gibt höchstens drei Spurpunkte: $S_1$, $S_2$ und $S_3$.",
+      "explanation": "Die Schnittgeraden mit den Koordinatenebenen heißen dagegen Spurgeraden. Verbindet man die drei Spurpunkte, erhält man das Spurdreieck – damit lässt sich die Ebene gut zeichnen."
+    },
+    {
+      "id": "ebe-15",
+      "chapter": "ebenen",
+      "question": "Berechne die Spurpunkte der Ebene $E: 2x_1 + 3x_2 + 6x_3 = 12$.",
+      "options": [
+        "$S_1(2\\,|\\,0\\,|\\,0)$, $S_2(0\\,|\\,3\\,|\\,0)$, $S_3(0\\,|\\,0\\,|\\,6)$",
+        "$S_1(0\\,|\\,4\\,|\\,2)$, $S_2(6\\,|\\,0\\,|\\,2)$, $S_3(6\\,|\\,4\\,|\\,0)$",
+        "$S_1(6\\,|\\,0\\,|\\,0)$, $S_2(0\\,|\\,4\\,|\\,0)$, $S_3(0\\,|\\,0\\,|\\,2)$",
+        "$S_1(\\tfrac{1}{6}\\,|\\,0\\,|\\,0)$, $S_2(0\\,|\\,\\tfrac{1}{4}\\,|\\,0)$, $S_3(0\\,|\\,0\\,|\\,\\tfrac{1}{2})$"
+      ],
+      "correct": 2,
+      "hint": "Auf der $x_1$‑Achse gilt $x_2 = 0$ und $x_3 = 0$.",
+      "explanation": "Merke: Für einen Spurpunkt setzt man die beiden anderen Koordinaten null.\n$S_1$: $x_2 = x_3 = 0 \\Rightarrow 2x_1 = 12 \\Rightarrow x_1 = 6$\n$S_2$: $x_1 = x_3 = 0 \\Rightarrow 3x_2 = 12 \\Rightarrow x_2 = 4$\n$S_3$: $x_1 = x_2 = 0 \\Rightarrow 6x_3 = 12 \\Rightarrow x_3 = 2$"
+    },
+    {
+      "id": "ebe-16",
+      "chapter": "ebenen",
+      "question": "Wie lautet die Hessesche Normalform (HNF) einer Ebene $E$ mit Stützvektor $\\vec p$ und Normalenvektor $\\vec n$?",
+      "options": [
+        "$E: (\\vec x - \\vec p) \\cdot \\vec n = 0$",
+        "$E: \\dfrac{(\\vec x - \\vec p) \\cdot \\vec n}{|\\vec p|} = 0$",
+        "$E: \\dfrac{(\\vec x - \\vec p) \\times \\vec n}{|\\vec n|} = 0$",
+        "$E: \\dfrac{(\\vec x - \\vec p) \\cdot \\vec n}{|\\vec n|} = 0$"
+      ],
+      "correct": 3,
+      "hint": "Es ist die Normalengleichung, geteilt durch die Länge des Normalenvektors.",
+      "explanation": "In Koordinatenform: $E: \\dfrac{n_1 x_1 + n_2 x_2 + n_3 x_3 - d}{|\\vec n|} = 0$. Man rechnet also mit dem Normalenvektor der Länge 1."
+    },
+    {
+      "id": "ebe-17",
+      "chapter": ["ebenen", "abstand"],
+      "question": "Wofür benutzt man die Hessesche Normalform (HNF) vor allem?",
+      "options": [
+        "Um den Abstand eines Punktes von einer Ebene zu berechnen.",
+        "Um den Schnittwinkel zweier Ebenen zu berechnen.",
+        "Um die Spurpunkte einer Ebene zu berechnen.",
+        "Um aus drei Punkten eine Ebenengleichung aufzustellen."
+      ],
+      "correct": 0,
+      "hint": "Setzt man einen Punkt in die HNF ein, erhält man eine Länge.",
+      "explanation": "Man setzt den Punkt $P$ in die HNF ein und nimmt den Betrag: $$d(P, E) = \\frac{|(\\overrightarrow{OP} - \\vec p) \\cdot \\vec n|}{|\\vec n|}$$"
+    },
+    {
+      "id": "ebe-18",
+      "chapter": ["ebenen", "lage"],
+      "question": "Welche Lagen kann eine Gerade $g$ zu einer Ebene $E$ haben?",
+      "options": [
+        "$g$ schneidet $E$, $g$ ist echt parallel zu $E$, oder $g$ ist windschief zu $E$.",
+        "$g$ schneidet $E$ in einem Durchstoßpunkt, $g$ ist echt parallel zu $E$, oder $g$ liegt in $E$.",
+        "$g$ schneidet $E$ in einem Durchstoßpunkt, oder $g$ ist echt parallel zu $E$.",
+        "$g$ schneidet $E$ in zwei Punkten, $g$ ist echt parallel zu $E$, oder $g$ liegt in $E$."
+      ],
+      "correct": 1,
+      "hint": "Es sind drei Fälle. „Windschief“ gibt es nur bei zwei Geraden.",
+      "explanation": "Man setzt die Gerade in die Ebene ein: Genau eine Lösung → Durchstoßpunkt. Keine Lösung → echt parallel. Unendlich viele Lösungen → $g$ liegt in $E$."
+    },
+    {
+      "id": "ebe-19",
+      "chapter": ["ebenen", "lage"],
+      "question": "Woran erkennt man, dass eine Gerade $g: \\vec x = \\vec p + t \\cdot \\vec u$ parallel zu einer Ebene $E$ mit Normalenvektor $\\vec n$ ist?",
+      "image": "img/gerade-ebene-parallel.svg",
+      "imageAlt": "Eine Ebene E mit Normalenvektor n und darüber eine Gerade g mit Richtungsvektor u. Der Richtungsvektor u steht senkrecht auf n.",
+      "options": [
+        "Richtungsvektor und Normalenvektor sind Vielfache voneinander: $\\vec u = k \\cdot \\vec n$.",
+        "Das Skalarprodukt von Stützvektor und Normalenvektor ist null: $\\vec p \\cdot \\vec n = 0$.",
+        "Das Skalarprodukt von Richtungsvektor und Normalenvektor ist null: $\\vec u \\cdot \\vec n = 0$.",
+        "Richtungsvektor und Normalenvektor sind gleich lang: $|\\vec u| = |\\vec n|$."
+      ],
+      "correct": 2,
+      "hint": "Der Normalenvektor steht senkrecht auf der Ebene. Wie muss dann die Richtung einer parallelen Geraden zu ihm stehen?",
+      "explanation": "Ist $\\vec u \\cdot \\vec n = 0$, prüft man noch, ob der Stützpunkt von $g$ in $E$ liegt: Wenn ja, liegt $g$ in $E$, sonst ist $g$ echt parallel zu $E$."
+    },
+    {
+      "id": "ebe-20",
+      "chapter": ["ebenen", "lage"],
+      "question": "Woran erkennt man, dass eine Gerade $g: \\vec x = \\vec p + t \\cdot \\vec u$ eine Ebene $E$ mit Normalenvektor $\\vec n$ orthogonal schneidet?",
+      "image": "img/gerade-ebene-orthogonal.svg",
+      "imageAlt": "Eine Gerade g durchstößt die Ebene E senkrecht im Punkt S. Ihr Richtungsvektor u zeigt in dieselbe Richtung wie der Normalenvektor n der Ebene.",
+      "options": [
+        "Richtungsvektor und Normalenvektor sind parallel, also Vielfache voneinander: $\\vec u = k \\cdot \\vec n$.",
+        "Das Skalarprodukt von Richtungsvektor und Normalenvektor ist null: $\\vec u \\cdot \\vec n = 0$.",
+        "Das Skalarprodukt von Richtungsvektor und Normalenvektor ist eins: $\\vec u \\cdot \\vec n = 1$.",
+        "Richtungsvektor und Normalenvektor sind gleich lang: $|\\vec u| = |\\vec n|$."
+      ],
+      "correct": 0,
+      "hint": "Die Gerade verläuft genau in Richtung des Normalenvektors.",
+      "explanation": "Vorsicht, nicht verwechseln: Bei einer zur Ebene parallelen Geraden gilt $\\vec u \\cdot \\vec n = 0$. Bei einer orthogonalen Geraden sind $\\vec u$ und $\\vec n$ parallel."
+    },
+    {
+      "id": "ebe-21",
+      "chapter": ["ebenen", "lage"],
+      "question": "Welche Lagen können zwei Ebenen $E$ und $F$ zueinander haben?",
+      "options": [
+        "Sie schneiden sich, sind echt parallel, sind identisch oder sind windschief.",
+        "Sie schneiden sich in einem Punkt oder sind parallel.",
+        "Sie schneiden sich, sind echt parallel oder sind identisch.",
+        "Sie schneiden sich, sind orthogonal oder sind windschief."
+      ],
+      "correct": 2,
+      "hint": "Es sind drei Fälle. Zwei Ebenen im Raum können nicht windschief sein.",
+      "explanation": "Zwei Ebenen, die nicht parallel sind, schneiden sich immer – und zwar in einer Geraden."
+    },
+    {
+      "id": "ebe-22",
+      "chapter": ["ebenen", "lage"],
+      "question": "Was haben zwei sich schneidende Ebenen gemeinsam?",
+      "options": [
+        "Einen Schnittpunkt.",
+        "Eine Schnittgerade.",
+        "Zwei Schnittgeraden.",
+        "Eine Schnittebene."
+      ],
+      "correct": 1,
+      "hint": "Denke an zwei Wände, die in einer Zimmerecke aufeinandertreffen.",
+      "explanation": "Die Schnittgerade enthält alle Punkte, die in beiden Ebenen liegen. Ihr Richtungsvektor steht senkrecht auf beiden Normalenvektoren, z. B. $\\vec n_E \\times \\vec n_F$."
+    },
+    {
+      "id": "ebe-23",
+      "chapter": ["ebenen", "lage"],
+      "question": "Woran erkennt man, dass zwei Ebenen $E$ und $F$ mit den Normalenvektoren $\\vec n_E$ und $\\vec n_F$ parallel sind?",
+      "image": "img/ebenen-parallel.svg",
+      "imageAlt": "Zwei übereinanderliegende parallele Ebenen E und F. Ihre Normalenvektoren zeigen beide in dieselbe Richtung.",
+      "options": [
+        "Ihre Normalenvektoren sind orthogonal: $\\vec n_E \\cdot \\vec n_F = 0$.",
+        "Ihre Normalenvektoren sind gleich lang: $|\\vec n_E| = |\\vec n_F|$.",
+        "Ihre Stützvektoren sind Vielfache voneinander.",
+        "Ihre Normalenvektoren sind parallel, also Vielfache voneinander: $\\vec n_E = k \\cdot \\vec n_F$."
+      ],
+      "correct": 3,
+      "hint": "Parallele Ebenen „stehen gleich“ im Raum.",
+      "explanation": "Sind die Normalenvektoren Vielfache, prüft man noch, ob ein Punkt von $E$ in $F$ liegt: Wenn ja, sind die Ebenen identisch, sonst echt parallel."
+    },
+    {
+      "id": "ebe-24",
+      "chapter": ["ebenen", "lage"],
+      "question": "Woran erkennt man, dass zwei Ebenen $E$ und $F$ mit den Normalenvektoren $\\vec n_E$ und $\\vec n_F$ orthogonal zueinander sind?",
+      "image": "img/ebenen-orthogonal.svg",
+      "imageAlt": "Eine waagerechte Ebene E und eine senkrecht darauf stehende Ebene F. Die beiden Normalenvektoren stehen im rechten Winkel zueinander.",
+      "options": [
+        "Ihre Normalenvektoren sind Vielfache voneinander: $\\vec n_E = k \\cdot \\vec n_F$.",
+        "Ihre Normalenvektoren sind orthogonal, das Skalarprodukt ist null: $\\vec n_E \\cdot \\vec n_F = 0$.",
+        "Das Vektorprodukt der Normalenvektoren ist der Nullvektor: $\\vec n_E \\times \\vec n_F = \\vec 0$.",
+        "Ihre Normalenvektoren sind gleich lang: $|\\vec n_E| = |\\vec n_F|$."
+      ],
+      "correct": 1,
+      "hint": "Stehen die Ebenen senkrecht aufeinander, dann auch ihre Normalenvektoren.",
+      "explanation": "Das Vektorprodukt $\\vec n_E \\times \\vec n_F = \\vec 0$ würde dagegen bedeuten, dass die Normalenvektoren parallel sind – also die Ebenen parallel."
+    },
+    {
+      "id": "ebe-25",
+      "chapter": ["ebenen", "lage"],
+      "question": "Wie berechnet man den Schnittwinkel $\\alpha$ zweier Ebenen $E$ und $F$ mit den Normalenvektoren $\\vec n_E$ und $\\vec n_F$?",
+      "options": [
+        "$\\sin \\alpha = \\dfrac{|\\vec n_E \\cdot \\vec n_F|}{|\\vec n_E| \\cdot |\\vec n_F|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec n_E| \\cdot |\\vec n_F|}{|\\vec n_E \\cdot \\vec n_F|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec n_E \\times \\vec n_F|}{|\\vec n_E| \\cdot |\\vec n_F|}$",
+        "$\\cos \\alpha = \\dfrac{|\\vec n_E \\cdot \\vec n_F|}{|\\vec n_E| \\cdot |\\vec n_F|}$"
+      ],
+      "correct": 3,
+      "hint": "Der Winkel zwischen den Ebenen ist der Winkel zwischen ihren Normalenvektoren.",
+      "explanation": "Zum Vergleich: Beim Winkel zwischen einer Geraden und einer Ebene nimmt man den Sinus: $\\sin \\alpha = \\dfrac{|\\vec u \\cdot \\vec n|}{|\\vec u| \\cdot |\\vec n|}$."
+    },
+    {
+      "id": "ebe-26",
+      "chapter": ["ebenen", "abstand"],
+      "question": "Eine Gerade $g$ mit Stützpunkt $P$ ist echt parallel zur Ebene $E$ mit Normalenvektor $\\vec n$. Wie berechnet man den Abstand $d$ von $g$ und $E$?",
+      "image": "img/abstand-gerade-ebene.svg",
+      "imageAlt": "Eine Gerade g verläuft parallel über einer Ebene E. Vom Stützpunkt P führt die Lotgerade senkrecht auf E und trifft E im Lotfußpunkt F. Die Strecke von P nach F hat die Länge d.",
+      "options": [
+        "1. Lotgerade durch $P$ mit dem Normalenvektor $\\vec n$ als Richtungsvektor aufstellen: $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec n$.\n2. Schnittpunkt $F$ (Lotfußpunkt) von $l$ und $E$ berechnen.\n3. Abstand: $d = |\\overrightarrow{PF}|$.",
+        "1. Lotgerade durch $P$ mit dem Richtungsvektor $\\vec u$ von $g$ aufstellen: $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec u$.\n2. Schnittpunkt $F$ von $l$ und $E$ berechnen.\n3. Abstand: $d = |\\overrightarrow{PF}|$.",
+        "1. Lotgerade durch $P$ mit dem Normalenvektor $\\vec n$ als Richtungsvektor aufstellen: $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec n$.\n2. Schnittpunkt $F$ (Lotfußpunkt) von $l$ und $E$ berechnen.\n3. Abstand: $d = |\\overrightarrow{OF}|$.",
+        "1. Stützpunkt $P$ von $g$ wählen.\n2. Stützpunkt $A$ von $E$ ablesen.\n3. Abstand: $d = |\\overrightarrow{PA}|$."
+      ],
+      "correct": 0,
+      "hint": "Der kürzeste Weg von $P$ zur Ebene verläuft in Richtung des Normalenvektors.",
+      "explanation": "Weil $g$ parallel zu $E$ ist, haben alle Punkte von $g$ denselben Abstand zu $E$ – ein Punkt genügt. Schneller geht es mit der HNF: $P$ einsetzen und den Betrag nehmen."
+    },
+    {
+      "id": "ebe-27",
+      "chapter": ["ebenen", "abstand"],
+      "question": "Die Ebenen $E_1$ und $E_2$ sind echt parallel, $\\vec n$ ist ein Normalenvektor. Wie berechnet man ihren Abstand $d$?",
+      "image": "img/abstand-ebenen.svg",
+      "imageAlt": "Zwei parallele Ebenen E1 und E2. Von einem Punkt P in E1 führt die Lotgerade senkrecht zu E2 und trifft sie im Lotfußpunkt F. Die Strecke von P nach F hat die Länge d.",
+      "options": [
+        "1. Einen Punkt $P$ von $E_1$ wählen.\n2. Lotgerade $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec n$ aufstellen.\n3. Durchstoßpunkt $F$ von $l$ und $E_1$ berechnen.\n4. Abstand: $d = |\\overrightarrow{PF}|$.",
+        "1. Einen Punkt $P$ von $E_1$ wählen.\n2. Lotgerade $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec n$ aufstellen.\n3. Durchstoßpunkt $F$ von $l$ und $E_2$ berechnen.\n4. Abstand: $d = |\\overrightarrow{OF}|$.",
+        "1. Einen Punkt $P$ von $E_1$ wählen.\n2. Einen Punkt $Q$ von $E_2$ wählen.\n3. Abstand: $d = |\\overrightarrow{PQ}|$.",
+        "1. Einen Punkt $P$ von $E_1$ wählen.\n2. Lotgerade $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec n$ aufstellen.\n3. Durchstoßpunkt $F$ von $l$ und $E_2$ berechnen.\n4. Abstand: $d = |\\overrightarrow{PF}|$."
+      ],
+      "correct": 3,
+      "hint": "Der Lotfußpunkt muss in der anderen Ebene liegen.",
+      "explanation": "Weil die Ebenen parallel sind, ist der Abstand überall gleich – ein Punkt von $E_1$ genügt. Alternativ: $P$ in die HNF von $E_2$ einsetzen."
+    },
+    {
+      "id": "ebe-28",
+      "chapter": "ebenen",
+      "question": "Der Punkt $P$ wird an der Ebene $E$ gespiegelt. $D$ ist der Durchstoßpunkt der Lotgeraden durch $P$ mit $E$. Wie berechnet man den Spiegelpunkt $P'$?",
+      "image": "img/spiegelung-punkt-ebene.svg",
+      "imageAlt": "Ein Punkt P über der Ebene E. Die Lotgerade durch P trifft E im Punkt D. Der Spiegelpunkt P' liegt auf der Lotgeraden unter E, genauso weit von D entfernt wie P. Der Vektor von P nach D ist zweimal eingezeichnet.",
+      "options": [
+        "$\\overrightarrow{OP'} = \\overrightarrow{OP} + \\overrightarrow{PD}$",
+        "$\\overrightarrow{OP'} = \\overrightarrow{OD} + 2 \\cdot \\overrightarrow{PD}$",
+        "$\\overrightarrow{OP'} = \\overrightarrow{OP} - 2 \\cdot \\overrightarrow{PD}$",
+        "$\\overrightarrow{OP'} = \\overrightarrow{OP} + 2 \\cdot \\overrightarrow{PD}$"
+      ],
+      "correct": 3,
+      "hint": "Von $P$ aus geht man zweimal den Weg von $P$ nach $D$.",
+      "explanation": "$\\overrightarrow{OP} + \\overrightarrow{PD}$ führt nur bis $D$ (in die Ebene). Gleichwertig zur richtigen Formel ist $\\overrightarrow{OP'} = \\overrightarrow{OD} + \\overrightarrow{PD}$."
+    },
+    {
+      "id": "ebe-29",
+      "chapter": "ebenen",
+      "question": "Wie bestimmt man bei der Spiegelung von $P$ an der Ebene $E$ (Normalenvektor $\\vec n$) den Punkt $D$?",
+      "image": "img/spiegelung-punkt-ebene.svg",
+      "imageAlt": "Ein Punkt P über der Ebene E. Die Lotgerade durch P trifft E im Punkt D. Der Spiegelpunkt P' liegt auf der Lotgeraden unter E.",
+      "options": [
+        "Man stellt eine Gerade durch $P$ mit einem Spannvektor von $E$ als Richtungsvektor auf und schneidet sie mit $E$.",
+        "Man rechnet $\\overrightarrow{OD} = \\overrightarrow{OP} + \\vec n$.",
+        "Man stellt die Lotgerade $l: \\vec x = \\overrightarrow{OP} + t \\cdot \\vec n$ auf und schneidet sie mit $E$. Der Schnittpunkt ist $D$.",
+        "$D$ ist der Mittelpunkt zwischen $P$ und dem Stützpunkt von $E$."
+      ],
+      "correct": 2,
+      "hint": "$D$ ist der Lotfußpunkt von $P$ auf der Ebene.",
+      "explanation": "Man setzt $l$ in die Koordinatengleichung von $E$ ein, berechnet $t$ und setzt $t$ wieder in $l$ ein. Eine Gerade mit einem Spannvektor als Richtung wäre parallel zu $E$ und hätte keinen Schnittpunkt."
+    },
+    {
+      "id": "ebe-30",
+      "chapter": "ebenen",
+      "question": "$P'$ ist der Spiegelpunkt von $P$ an der Ebene $E$, $D$ ist der Lotfußpunkt von $P$ auf $E$. Welche Aussage stimmt?",
+      "options": [
+        "$P$ ist der Mittelpunkt der Strecke $\\overline{DP'}$.",
+        "$D$ ist der Mittelpunkt der Strecke $\\overline{PP'}$.",
+        "$P'$ liegt in der Ebene $E$.",
+        "Die Strecke $\\overline{PP'}$ ist parallel zur Ebene $E$."
+      ],
+      "correct": 1,
+      "hint": "$P$ und $P'$ sind gleich weit von der Ebene entfernt, aber auf verschiedenen Seiten.",
+      "explanation": "Daraus folgt auch: $\\overrightarrow{OD} = \\dfrac{1}{2}\\left(\\overrightarrow{OP} + \\overrightarrow{OP'}\\right)$. Die Strecke $\\overline{PP'}$ steht senkrecht auf $E$."
+    }
+  ]
+}

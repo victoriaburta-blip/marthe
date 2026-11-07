@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Zwei windschiefe Geraden g und h; g liegt in der Hilfsebene E, die parallel zu h ist">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+  </defs>
+
+  <!-- Hilfsebene E -->
+  <polygon points="15,170 195,212 290,160 110,118" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.8" stroke-linejoin="round"/>
+
+  <!-- g liegt in E -->
+  <line x1="40" y1="180" x2="262" y2="150" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- h verläuft oberhalb von E, parallel zu E -->
+  <line x1="50" y1="40" x2="270" y2="95" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- rechter Winkel bei F -->
+  <path d="M184.7 150.3 L184.7 138.3 L175 136" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+
+  <!-- Lot von Q auf E -->
+  <line x1="175" y1="148" x2="175" y2="77" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+
+  <!-- Punkte -->
+  <circle cx="175" cy="71.3" r="4.5" fill="#ffffff"/>
+  <circle cx="175" cy="148" r="4.5" fill="#ffffff"/>
+
+  <!-- Beschriftung -->
+  <g font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">
+    <text x="158" y="56">Q</text>
+    <text x="153" y="152">F</text>
+    <text x="236" y="178">g</text>
+    <text x="274" y="102">h</text>
+    <text x="62" y="168">E</text>
+  </g>
+  <text x="183" y="118" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">d</text>
+</svg>

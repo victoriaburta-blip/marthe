@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 225" role="img" aria-label="Abstand zweier paralleler Ebenen E1 und E2: Lotgerade von P in E1 mit Lotfußpunkt F in E2">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#CD4F39"/>
+    </marker>
+    <marker id="tiny" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto">
+      <path d="M0 1 L9 5 L0 9" fill="none" stroke="#fff" stroke-width="2"/>
+    </marker>
+  </defs>
+  <polygon points="15,190 185,215 285,165 115,140" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.8" stroke-linejoin="round"/>
+  <polygon points="15,85 185,110 285,60 115,35" fill="#ffffff" fill-opacity="0.14" stroke="#ffffff" stroke-width="1.6" stroke-opacity="0.8" stroke-linejoin="round"/>
+  <line x1="150" y1="22" x2="150" y2="212" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="6 5" stroke-opacity="0.85"/>
+  <path d="M150 168 L161.9 169.7 L161.9 181.7" fill="none" stroke="#ffffff" stroke-width="1.6"/>
+  <circle cx="155.9" cy="174.9" r="1.6" fill="#ffffff"/>
+  <line x1="150" y1="180" x2="150" y2="79" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <line x1="245" y1="72" x2="245" y2="26" stroke="#CD4F39" stroke-width="4" stroke-linecap="round" marker-end="url(#arrow)"/>
+  <circle cx="245" cy="72" r="4.5" fill="#ffffff"/>
+  <circle cx="150" cy="75" r="4.5" fill="#ffffff"/>
+  <circle cx="150" cy="180" r="4.5" fill="#ffffff"/>
+  <text x="126" y="72" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">P</text>
+  <text x="126" y="195" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">F</text>
+  <text x="157" y="136" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">d</text>
+  <text x="190" y="80" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">E<tspan dy="5" font-size="15">1</tspan></text>
+  <text x="205" y="186" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">E<tspan dy="5" font-size="15">2</tspan></text>
+  <text x="259" y="46" font-family="Georgia, 'Times New Roman', serif" font-style="italic" font-size="22" fill="#ffffff">n</text>
+  <line x1="259" y1="29" x2="272" y2="29" stroke="#ffffff" stroke-width="1.6" marker-end="url(#tiny)"/>
+  <text x="157" y="22" text-anchor="start" font-family="system-ui, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.9">Lotgerade</text>
+</svg>
